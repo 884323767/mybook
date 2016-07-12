@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>inputTest</title>
+    <script type="text/javascript">
+    function show() {
+        var tag = document.getElementsByTagName('input')[0];
+        BirthDay = new Date(Date.parse("2014-08-31 14:00:00".replace(/-/g, "/")));
+        console.log(tag.value)
+        var date = tag.value.replace(/-/g, "/");
+        console.log(date);
+        alert(date)
+        tag.value = "2016-07-19";
+        // date = date.value.replace(/'/'/g,"-");
+        // console.log(date) tag.value = date;
+        }
+    </script>
+</head>
+
+<body>
+    <p>this is h5 input test</p>
+    <input type="date" />
+    <input type="button" value="show value" onclick="show()" />
+</body>
+
+</html>
